@@ -153,7 +153,7 @@ def iniciar_servidor():
 if __name__ == "__main__":
     # Iniciar o servidor em uma thread separada 
     servidor_thread = threading.Thread(target=iniciar_servidor) 
-    servidor_thread.daemon = True
+    servidor_thread.daemon = True 
     
     servidor_thread.start()
  
