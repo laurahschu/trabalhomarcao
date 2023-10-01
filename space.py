@@ -150,8 +150,8 @@ def iniciar_servidor():
             threading.Thread(target=lidar_com_conexao, args=(cliente_socket,)).start()
 
 
-if __name__ == "__main__":
-    # Iniciar o servidor em uma thread separada
+if __name__ == "__main__": 
+    # Iniciar o servidor em uma thread separada 
     servidor_thread = threading.Thread(target=iniciar_servidor)
     servidor_thread.daemon = True 
     
